@@ -1,25 +1,46 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import ThemedRouteView from '../components/ThemedRouteView.vue'
 
 const routes = [
     {
         path: '/',
-        component: () => import('../pages/HomeView.vue')
+        component: ThemedRouteView,
+        props: {
+            dark: () => import('../pages/HomeView.vue'),
+            light: () => import('../themes/light/pages/light_HomeView.vue'),
+        },
     },
     {
         path: '/tutorial',
-        component: () => import('../pages/TutorialView.vue')
+        component: ThemedRouteView,
+        props: {
+            dark: () => import('../pages/TutorialView.vue'),
+            light: () => import('../themes/light/pages/light_TutorialView.vue'),
+        },
     },
     {
         path: '/launch',
-        component: () => import('../pages/LaunchView.vue')
+        component: ThemedRouteView,
+        props: {
+            dark: () => import('../pages/LaunchView.vue'),
+            light: () => import('../themes/light/pages/light_LaunchView.vue'),
+        },
     },
     {
         path: '/batch-run',
-        component: () => import('../pages/BatchRunView.vue')
+        component: ThemedRouteView,
+        props: {
+            dark: () => import('../pages/BatchRunView.vue'),
+            light: () => import('../themes/light/pages/light_BatchRunView.vue'),
+        },
     },
     {
         path: '/workflows/:name?',
-        component: () => import('../pages/WorkflowWorkbench.vue')
+        component: ThemedRouteView,
+        props: {
+            dark: () => import('../pages/WorkflowWorkbench.vue'),
+            light: () => import('../themes/light/pages/light_WorkflowWorkbench.vue'),
+        },
     }
 ]
 

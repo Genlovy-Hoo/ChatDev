@@ -54,7 +54,7 @@
 
 <script setup>
 import { reactive, watch } from 'vue'
-import { configStore } from '../utils/configStore.js'
+import { configStore } from '../../../utils/configStore.js'
 
 const props = defineProps({
   isVisible: {
@@ -95,7 +95,7 @@ const save = () => {
 .modal-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(15, 23, 42, 0.35);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -106,13 +106,13 @@ const save = () => {
 .modal-content.settings-modal {
   width: 500px !important;
   max-width: 90vw;
-  background: #1e1e1e;
+  background: #ffffff;
   border-radius: 8px;
-  border: 1px solid #333;
-  color: #fff;
+  border: 1px solid #e2e8f0;
+  color: #0f172a;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
 }
 
 .modal-header {
@@ -120,7 +120,7 @@ const save = () => {
   justify-content: space-between;
   align-items: center;
   padding: 16px 20px;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #e2e8f0;
 }
 
 .modal-header h3 {
@@ -132,7 +132,7 @@ const save = () => {
 .close-button {
   background: none;
   border: none;
-  color: #888;
+  color: #64748b;
   font-size: 24px;
   cursor: pointer;
   padding: 0;
@@ -140,7 +140,7 @@ const save = () => {
 }
 
 .close-button:hover {
-  color: #fff;
+  color: #0f172a;
 }
 
 .modal-body {
@@ -152,7 +152,7 @@ const save = () => {
 .settings-item {
   margin-bottom: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid #e2e8f0;
 }
 
 .settings-item:last-child {
@@ -165,7 +165,7 @@ const save = () => {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #e0e0e0;
+  color: #0f172a;
   font-size: 15px;
   cursor: pointer;
   user-select: none;
@@ -181,7 +181,7 @@ const save = () => {
 
 .setting-desc {
   margin-left: 26px;
-  color: #8b949e;
+  color: #475569;
   font-size: 13px;
   line-height: 1.4;
   margin-top: 0;
@@ -189,8 +189,8 @@ const save = () => {
 
 .theme-label {
   font-size: 15px;
-  font-weight: 500;
-  color: #e0e0e0;
+  font-weight: 600;
+  color: #0f172a;
   margin-bottom: 6px;
 }
 
@@ -199,7 +199,7 @@ const save = () => {
   display: flex;
   gap: 16px;
   font-size: 13px;
-  color: #e0e0e0;
+  color: #0f172a;
 }
 
 .theme-options label {
@@ -215,7 +215,7 @@ const save = () => {
 
 .modal-footer {
   padding: 16px 20px;
-  border-top: 1px solid #333;
+  border-top: 1px solid #e2e8f0;
   display: flex;
   justify-content: flex-end;
   gap: 12px;
@@ -236,9 +236,9 @@ const save = () => {
 }
 
 .cancel-button {
-  background: transparent;
-  color: #ccc;
-  border: 1px solid #444;
+  background: #f8fafc;
+  color: #0f172a;
+  border: 1px solid #cbd5e1;
   padding: 8px 16px;
   border-radius: 4px;
   cursor: pointer;
@@ -246,9 +246,8 @@ const save = () => {
 }
 
 .cancel-button:hover {
-  background: rgba(255, 255, 255, 0.05);
-  color: #fff;
-  border-color: #666;
+  background: #f1f5f9;
+  border-color: #94a3b8;
 }
 
 /* Transitions */
