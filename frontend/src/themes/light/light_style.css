@@ -1,0 +1,32 @@
+/* AI-generated: light theme global style overrides */
+
+/* RichTooltip is teleported to <body>, so it needs a global override */
+[data-theme='light'] .rich-tooltip {
+  background: rgba(255, 255, 255, 0.98) !important;
+  color: #0f172a !important;
+  box-shadow:
+    0 10px 30px -18px rgba(15, 23, 42, 0.35),
+    0 0 0 1px rgba(15, 23, 42, 0.12) !important;
+  backdrop-filter: blur(10px);
+}
+
+[data-theme='light'] .rich-tooltip .tooltip-title {
+  color: #0f172a !important;
+}
+
+[data-theme='light'] .rich-tooltip .tooltip-description {
+  color: #334155 !important;
+}
+
+[data-theme='light'] .rich-tooltip .tooltip-examples {
+  color: #475569 !important;
+}
+
+[data-theme='light'] .rich-tooltip .tooltip-learn-more {
+  color: #2563eb !important;
+}
+
+[data-theme='light'] .rich-tooltip .tooltip-learn-more:hover {
+  color: #1d4ed8 !important;
+}
+
